@@ -1,0 +1,29 @@
+# 1. Archivos específicos del entorno de desarrollo
+/.idea/
+/*.iml
+*.log
+
+# 2. Archivos de compilación de Maven
+/target/
+/*.jar
+/*.war
+
+# 3. Archivos generados por Spring Boot
+/application.properties
+/application.yml
+
+# 4. Archivos de configuración de Eclipse
+/.project
+/.classpath
+/.settings/
+
+# 5. Archivos de configuración de sistemas operativos
+.DS_Store   # MacOS
+Thumbs.db   # Windows
+
+# 6. Archivos de logs
+*.log
+
+# 7. Archivos de dependencias locales 
+/.m2/
+
