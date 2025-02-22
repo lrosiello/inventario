@@ -31,5 +31,13 @@ public class Compra {
 
     private LocalDate fecha;
     private int cantidad; 
+    
+    public Compra(Long id, Producto producto, LocalDate fecha, Proveedor proveedor, int cantidad) {
+        this.id = id;
+        this.producto = producto;
+        this.proveedor = proveedor;
+        this.fecha = fecha;
+        this.cantidad = cantidad;
+    }
 
 }

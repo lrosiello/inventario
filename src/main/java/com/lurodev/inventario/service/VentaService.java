@@ -19,7 +19,6 @@ public class VentaService {
     private ProductoRepository productoRepository;
 
     public Venta realizarVenta(Venta venta) {
-        // Actualizamos el stock del producto
         Producto producto = productoRepository.findById(venta.getProducto().getId())
                 .orElseThrow(() -> new RuntimeException("Producto no encontrado"));
         

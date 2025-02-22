@@ -19,4 +19,8 @@ public class Categoria {
 
     private String descripcion;
 
+    public Categoria(Long id, String descripcion) {
+        this.id = id;
+        this.descripcion = descripcion;
+    }
 }

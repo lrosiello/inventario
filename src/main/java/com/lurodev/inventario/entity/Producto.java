@@ -1,8 +1,6 @@
 package com.lurodev.inventario.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -16,7 +14,6 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Producto {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String descripcion;
@@ -28,5 +25,14 @@ public class Producto {
     private double costo;
     private double precio;
     private int stock; 
+    
+    public Producto(Long id, String descripcion, Categoria categoria, double costo, double precio, int stock) {
+        this.id = id;
+        this.descripcion = descripcion;
+        this.categoria = categoria;
+        this.costo = costo;
+        this.precio = precio;
+        this.stock = stock;
+    }
 
 }

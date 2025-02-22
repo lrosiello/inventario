@@ -31,4 +31,9 @@ public class ProductoService {
     public List<Producto> obtenerTodos() {
         return productoRepository.findAll();
     }
+    
+    public Producto findById(Long id) {
+    	 return productoRepository.findById(id)
+                 .orElseThrow(() -> new RuntimeException("Producto no encontrado"));
+    }
 }

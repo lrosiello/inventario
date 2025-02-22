@@ -28,4 +28,10 @@ public class Venta {
     private LocalDate fecha;
     private int cantidad; 
 
+    public Venta(Long id, Producto producto, LocalDate fecha, int cantidad) {
+        this.id = id;
+        this.producto = producto;
+        this.fecha = fecha;
+        this.cantidad = cantidad;
+    }
 }
